@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="icon" href="img/AURA (3).png">
+    <title>Aura Deco | Élégance pour votre maison</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav id="menu" class="container-fluid">
+            <div class="nav-container">
+                <div id="logo">
+                    <button id="toggleMenu" aria-label="Toggle menu">
+                        <i class="fa-solid fa-bars menu-icon"></i>
+                    </button>
+                    <a href="index.html" class="logo-link">
+                        <img src="img/AURA (3).png" alt="Aura Deco Logo" class="brand-logo">
+                    </a>
+                    <span class="tagline">BRINGING ELEGANCE TO EVERY CORNER</span>
+                </div>
+                <div id="menubar">
+                    <a href="index.html" class="active">Accueil</a>
+                    <a href="product.html">Collections</a>
+                    <a href="Contact.html">Contact</a>
+                    <div class="language-switch">
+                        <button onclick="switchLang('fr')" class="lang-btn active">FR</button>
+                        <button onclick="switchLang('ar')" class="lang-btn">AR</button>
+                    </div>
+                    <a href="#" class="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="overlay">
+            <div class="hero-content">
+                <h1 class="hero-title" lang="fr">Bienvenue chez Aura Decoration</h1>
+                <h1 class="hero-title" lang="ar" style="display:none;">مرحبًا بكم في أورا للديكور</h1>
+                <p class="hero-subtitle" lang="fr">Apporter l'élégance à chaque coin de votre maison</p>
+                <p class="hero-subtitle" lang="ar" style="display:none;">إضفاء الأناقة على كل ركن من منزلك</p>
+                <a href="product.html" class="btn btn-primary">
+                    <span lang="fr">Découvrir nos collections</span>
+                    <span lang="ar" style="display:none;">استكشف مجموعاتنا</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Categories -->
+    <section class="featured-categories">
+        <div class="container">
+            <h2 class="section-title" lang="fr">Nos Collections</h2>
+            <h2 class="section-title" lang="ar" style="display:none;">مجموعاتنا</h2>
+            
+            <div class="categories-grid">
+                <a href="product.html#salon" class="category-card">
+                    <div class="category-img-container">
+                        <img src="img/salon/ST1.jpeg" alt="Salon">
+                    </div>
+                    <h3 lang="fr">Salon</h3>
+                    <h3 lang="ar" style="display:none;">الصالون</h3>
+                </a>
+                
+                <a href="product.html#chambre" class="category-card">
+                    <div class="category-img-container">
+                        <img src="img/chambre/chambre-font.jpeg" alt="Chambre">
+                    </div>
+                    <h3 lang="fr">Chambre</h3>
+                    <h3 lang="ar" style="display:none;">غرفة النوم</h3>
+                </a>
+                
+                <a href="product.html#cuisine" class="category-card">
+                    <div class="category-img-container">
+                        <img src="img/cuisine/1efd70f16ef572060456ab749eca9bdc.jpg" alt="Cuisine">
+                    </div>
+                    <h3 lang="fr">Cuisine</h3>
+                    <h3 lang="ar" style="display:none;">المطبخ</h3>
+                </a>
+                
+                <a href="product.html#salle-de-bain" class="category-card">
+                    <div class="category-img-container">
+                        <img src="img/salle-de-bain/ST12.jpeg" alt="Salle de Bain">
+                    </div>
+                    <h3 lang="fr">Salle de Bain</h3>
+                    <h3 lang="ar" style="display:none;">الحمام</h3>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Packs -->
+    <section class="featured-packs">
+        <div class="container">
+            <h2 class="section-title" lang="fr">Nos Packs</h2>
+            <h2 class="section-title" lang="ar" style="display:none;">عروضنا المميزة</h2>
+            
+            <div class="packs-grid">
+                <div class="pack-card">
+                    <div class="pack-img">
+                        <img src="img/chambre/chambrepack.jpg" alt="Pack Chambre">
+                        <div class="pack-badge">Populaire</div>
+                    </div>
+                    <div class="pack-content">
+                        <h3 lang="fr">Pack Chambre</h3>
+                        <h3 lang="ar" style="display:none;">باقة غرفة النوم</h3>
+                        <p lang="fr">Chambre à coucher + meuble TV + canapé + cadre</p>
+                        <p lang="ar" style="display:none;">غرفة نوم + طاولة تلفزيون + كنبة + إطار</p>
+                        <a href="product.html#pack-chambre" class="btn btn-outline">
+                            <span lang="fr">Voir détails</span>
+                            <span lang="ar" style="display:none;">عرض التفاصيل</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="pack-card">
+                    <div class="pack-img">
+                        <img src="img/salon/salonpack.jpg" alt="Pack Salon">
+                        <div class="pack-badge">Nouveau</div>
+                    </div>
+                    <div class="pack-content">
+                        <h3 lang="fr">Pack Salon</h3>
+                        <h3 lang="ar" style="display:none;">باقة الصالون</h3>
+                        <p lang="fr">Salon moderne + Table basse + Meuble TV</p>
+                        <p lang="ar" style="display:none;">صالون عصري + طاولة قهوة + طاولة تلفزيون</p>
+                        <a href="product.html#pack-salon" class="btn btn-outline">
+                            <span lang="fr">Voir détails</span>
+                            <span lang="ar" style="display:none;">عرض التفاصيل</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="pack-card">
+                    <div class="pack-img">
+                        <img src="img/cuisine/1efd70f16ef572060456ab749eca9bdc.jpg" alt="Pack Cuisine">
+                        <div class="pack-badge">Économie</div>
+                    </div>
+                    <div class="pack-content">
+                        <h3 lang="fr">Pack Cuisine</h3>
+                        <h3 lang="ar" style="display:none;">باقة المطبخ</h3>
+                        <p lang="fr">Table à manger + 4 chaises + Buffet</p>
+                        <p lang="ar" style="display:none;">طاولة طعام + 4 كراسي + خزانة</p>
+                        <a href="product.html#pack-cuisine" class="btn btn-outline">
+                            <span lang="fr">Voir détails</span>
+                            <span lang="ar" style="display:none;">عرض التفاصيل</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title" lang="fr">Ce que disent nos clients</h2>
+            <h2 class="section-title" lang="ar" style="display:none;">آراء عملائنا</h2>
+            
+            <div class="testimonials-slider">
+                <div class="testimonial-card">
+                    <div class="quote-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p class="testimonial-text" lang="fr">"Excellente qualité et service incroyable! Je recommande vivement Aura Decoration!"</p>
+                    <p class="testimonial-text" lang="ar" style="display:none;">"جودة ممتازة وخدمة رائعة! أوصي بشدة بأورا للديكور!"</p>
+                    <div class="testimonial-author">
+                        <h4>Sarah L.</h4>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="quote-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p class="testimonial-text" lang="fr">"Meubles magnifiques et livraison rapide. Mon salon est maintenant superbe!"</p>
+                    <p class="testimonial-text" lang="ar" style="display:none;">"أثاث جميل وتوصيل سريع. غرفة المعيشة الخاصة بي تبدو مذهلة الآن!"</p>
+                    <div class="testimonial-author">
+                        <h4>Mark T.</h4>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="quote-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p class="testimonial-text" lang="fr">"Service client exceptionnel et prix très compétitifs. Je reviendrai!"</p>
+                    <p class="testimonial-text" lang="ar" style="display:none;">"خدمة عملاء استثنائية وأسعار تنافسية للغاية. سأعود مرة أخرى!"</p>
+                    <div class="testimonial-author">
+                        <h4>Amina B.</h4>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-choose-us">
+        <div class="container">
+            <h2 class="section-title" lang="fr">Pourquoi choisir Aura Decoration?</h2>
+            <h2 class="section-title" lang="ar" style="display:none;">لماذا تختار أورا للديكور؟</h2>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3 lang="fr">Haute Qualité</h3>
+                    <h3 lang="ar" style="display:none;">جودة عالية</h3>
+                    <p lang="fr">Meubles durables fabriqués avec les meilleurs matériaux</p>
+                    <p lang="ar" style="display:none;">أثاث متين مصنوع من أفضل المواد</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-tags"></i>
+                    </div>
+                    <h3 lang="fr">Prix Abordables</h3>
+                    <h3 lang="ar" style="display:none;">أسعار معقولة</h3>
+                    <p lang="fr">Excellentes promotions et remises pour tous les budgets</p>
+                    <p lang="ar" style="display:none;">عروض وخصومات ممتازة تناسب جميع الميزانيات</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3 lang="fr">Livraison Rapide</h3>
+                    <h3 lang="ar" style="display:none;">توصيل سريع</h3>
+                    <p lang="fr">Service de livraison rapide et sécurisé à votre domicile</p>
+                    <p lang="ar" style="display:none;">خدمة توصيل سريعة وآمنة إلى منزلك</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-smile"></i>
+                    </div>
+                    <h3 lang="fr">Satisfaction Garantie</h3>
+                    <h3 lang="ar" style="display:none;">رضا مضمون</h3>
+                    <p lang="fr">Service client exceptionnel et garantie de satisfaction</p>
+                    <p lang="ar" style="display:none;">خدمة عملاء استثنائية وضمان الرضا</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3 lang="fr">À propos de nous</h3>
+                    <h3 lang="ar" style="display:none;">من نحن</h3>
+                    <p lang="fr">Aura Decoration est votre destination de confiance pour des meubles élégants et de haute qualité qui transformeront votre maison.</p>
+                    <p lang="ar" style="display:none;">أورا للديكور هي وجهتك الموثوقة للأثاث الأنيق وعالي الجودة الذي سيحول منزلك.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 lang="fr">Liens rapides</h3>
+                    <h3 lang="ar" style="display:none;">روابط سريعة</h3>
+                    <div class="footer-nav">
+                        <a href="index.html">
+                            <span lang="fr">Accueil</span>
+                            <span lang="ar" style="display:none;">الرئيسية</span>
+                        </a>
+                        <a href="product.html">
+                            <span lang="fr">Collections</span>
+                            <span lang="ar" style="display:none;">المجموعات</span>
+                        </a>
+                        <a href="Contact.html">
+                            <span lang="fr">Contact</span>
+                            <span lang="ar" style="display:none;">اتصل بنا</span>
+                        </a>
+                        <a href="#">
+                            <span lang="fr">Politique de confidentialité</span>
+                            <span lang="ar" style="display:none;">سياسة الخصوصية</span>
+                        </a>
+                        <a href="#">
+                            <span lang="fr">Conditions d'utilisation</span>
+                            <span lang="ar" style="display:none;">شروط الاستخدام</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 lang="fr">Contactez-nous</h3>
+                    <h3 lang="ar" style="display:none;">اتصل بنا</h3>
+                    <div class="contact-info">
+                        <p>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span lang="fr">123 Rue Principale, Batna, Algerie</span>
+                            <span lang="ar" style="display:none;">123 الشارع الرئيسي، باتنة، الجزاىر</span>
+                        </p>
+                        <p>
+                            <i class="fas fa-phone-alt"></i>
+                            <span>+213 5XX-XXXXXX</span>
+                        </p>
+                        <p>
+                            <i class="fas fa-envelope"></i>
+                            <span>contact@aura-deco.com</span>
+                        </p>
+                        <p>
+                            <i class="fas fa-clock"></i>
+                            <span lang="fr">Sam-Jeu: 9h00 - 18h00</span>
+                            <span lang="ar" style="display:none;">الاثنين-السبت: 9:00 - 18:00</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p lang="fr">© 2025 Aura Decoration. Tous droits réservés.</p>
+                <p lang="ar" style="display:none;">© 2025 أورا للديكور. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <div id="go_to_top">
+        <a href="#top" aria-label="Back to top"><i class="fa-solid fa-angle-up"></i></a>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

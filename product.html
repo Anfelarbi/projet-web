@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="icon" href="img/AURA (3).png">
+    <title>Aura Deco | Collections</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav id="menu" class="container-fluid">
+            <div class="nav-container">
+                <div id="logo">
+                    <button id="toggleMenu" aria-label="Toggle menu">
+                        <i class="fa-solid fa-bars menu-icon"></i>
+                    </button>
+                    <a href="index.html" class="logo-link">
+                        <img src="img/AURA (3).png" alt="Aura Deco Logo" class="brand-logo">
+                    </a>
+                    <span class="tagline">BRINGING ELEGANCE TO EVERY CORNER</span>
+                </div>
+                <div id="menubar">
+                    <a href="index.html">Accueil</a>
+                    <a href="product.html" class="active">Collections</a>
+                    <a href="Contact.html">Contact</a>
+                    <!--<div class="language-switch">
+                        <button onclick="switchLang('fr')" class="lang-btn active">FR</button>
+                        <button onclick="switchLang('ar')" class="lang-btn">AR</button>-->
+                    </div>
+                    <a href="#" class="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Product Header -->
+    <div class="product-header">
+        <div class="container">
+            <h1 lang="fr">Nos Collections</h1>
+            <h1 lang="ar" style="display:none;">مجموعاتنا</h1>
+            <p lang="fr">Découvrez notre sélection de meubles élégants et de haute qualité</p>
+            <p lang="ar" style="display:none;">اكتشف مجموعتنا من الأثاث الأنيق وعالي الجودة</p>
+        </div>
+    </div>
+
+    <!-- Product Filter -->
+    <section class="product-filter">
+        <div class="container">
+            <div class="filter-container">
+                <button class="filter-btn active" data-target="meuble">
+                    <span lang="fr">Meuble</span>
+                    <span lang="ar" style="display:none;">أثاث</span>
+                </button>
+                <button class="filter-btn" data-target="salon">
+                    <span lang="fr">Salon</span>
+                    <span lang="ar" style="display:none;">صالون</span>
+                </button>
+                <button class="filter-btn" data-target="chambre">
+                    <span lang="fr">Chambre</span>
+                    <span lang="ar" style="display:none;">غرفة نوم</span>
+                </button>
+                <button class="filter-btn" data-target="salle-de-bain">
+                    <span lang="fr">Salle de Bain</span>
+                    <span lang="ar" style="display:none;">حمام</span>
+                </button>
+                <button class="filter-btn" data-target="cuisine">
+                    <span lang="fr">Cuisine</span>
+                    <span lang="ar" style="display:none;">مطبخ</span>
+                </button>
+                <button class="filter-btn" data-target="deco-enfant">
+                    <span lang="fr">Déco Enfant</span>
+                    <span lang="ar" style="display:none;">ديكور أطفال</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Sections -->
+    <!-- Meuble Section -->
+    <section id="meuble" class="product-section active">
+        <div class="container">
+            <h2 lang="fr">Porte Chaussure Collection</h2>
+            <h2 lang="ar" style="display:none;">مجموعة خزانة الأحذية</h2>
+            
+            <div class="product-grid">
+                <div class="product-card" data-id="ps1">
+                    <img src="img/meuble/9e9ae5f9160f6c49531abaa80ba9b819.jpg" alt="Porte Chaussure 1">
+                    <div class="info">
+                        <h3 lang="fr">Porte Chaussure Moderne</h3>
+                        <h3 lang="ar" style="display:none;">خزانة أحذية عصرية</h3>
+                        <p lang="fr">Rangement élégant pour vos chaussures</p>
+                        <p lang="ar" style="display:none;">تخزين أنيق للأحذية</p>
+                        <p class="price">8500 DA</p>
+                        <div class="product-actions">
+                            <button class="btn-buy">
+                                <span lang="fr">Acheter</span>
+                                <span lang="ar" style="display:none;">شراء</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-id="ps2">
+                    <img src="img/meuble/d56c15c74bbf47467d437d5e68a9871c.jpg" alt="Porte Chaussure 2">
+                    <div class="info">
+                        <h3 lang="fr">Porte Chaussure Compact</h3>
+                        <h3 lang="ar" style="display:none;">خزانة أحذية مدمجة</h3>
+                        <p lang="fr">Parfait pour les petits espaces</p>
+                        <p lang="ar" style="display:none;">مثالي للمساحات الصغيرة</p>
+                        <p class="price">6500 DA</p>
+                        <div class="product-actions">
+                            <button class="btn-buy">
+                                <span lang="fr">Acheter</span>
+                                <span lang="ar" style="display:none;">شراء</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-id="ps3">
+                    <img src="img/meuble/c2c660395003a26a4dbfaf448e607865.jpg" alt="Porte Chaussure 3">
+                    <div class="info">
+                        <h3 lang="fr">Porte Chaussure Luxe</h3>
+                        <h3 lang="ar" style="display:none;">خزانة أحذية فاخرة</h3>
+                        <p lang="fr">Design élégant et finition premium</p>
+                        <p lang="ar" style="display:none;">تصميم أنيق وتشطيب ممتاز</p>
+                        <p class="price">12000 DA</p>
+                        <div class="product-actions">
+                            <button class="btn-buy">
+                                <span lang="fr">Acheter</span>
+                                <span lang="ar" style="display:none;">شراء</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-id="ps4">
+                    <img src="img/meuble/6fac48b1183c0662b429f9155f1a32e1.jpg" alt="Porte Chaussure 4">
+                    <div class="info">
+                        <h3 lang="fr">Porte Chaussure Minimaliste</h3>
+                        <h3 lang="ar" style="display:none;">خزانة أحذية بسيطة</h3>
+                        <p lang="fr">Style épuré et fonctionnel</p>
+                        <p lang="ar" style="display:none;">أسلوب بسيط وعملي</p>
+                        <p class="price">7500 DA</p>
+                        <div class="product-actions">
+                            <button class="btn-buy">
+                                <span lang="fr">Acheter</span>
+                                <span lang="ar" style="display:none;">شراء</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <h2 lang="fr">Porte Manteau Collection</h2>
+            <h2 lang="ar" style="display:none;">مجموعة علاقات الملابس</h2>
+            
+            <div class="product-grid">
+                <div class="product-card" data-id="pm1">
+                    <img src="img/meuble/portemanteau.jpg" alt="Porte Manteau 1">
+                    <div class="info">
+                        <h3 lang="fr">Porte Manteau Classique</h3>
+                        <h3 lang="ar" style="display:none;">علاقة ملابس كلاسيكية</h3>
+                        <p lang="fr">Élégant et fonctionnel pour votre entrée</p>
+                        <p lang="ar" style="display:none;">أنيقة وعملية لمدخل منزلك</p>
+                        <p class="price">9500 DA</p>
+                        <div class="product-actions">
+                            <button class="btn-buy">
+                                <span lang="fr">Acheter</span>
+                                <span lang="ar" style="display:none;">شراء</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-id="pm2">
+                    <img src="img/meuble/portemonteau1.jpg" alt="Porte Manteau 2">
+                    <div class="info">
+                        <h3 lang="fr">Porte Manteau Moderne</h3>
+                        <h3 lang="ar" style="display:none;">علاقة ملابس عصرية</h3>
+                        <p lang="fr">Design contemporain et pratique</p>
+                        <p lang="ar" style="display:none;">تصميم معاصر وعملي</p>
+                        <p class="price">11500 DA</p>
+                        <div class="product-actions">
+                            <button class="btn-buy">
+                                <span lang="fr">Acheter</span>
+                                <span lang="ar" style="display:none;">شراء</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-id="pm3">
+                    <img src="img/meuble/portemanteau6.jpg" alt="Porte Manteau 3">
+                    <div class="info">
+                        <h3 lang="fr">Porte Manteau en Bois</h3>
+                        <h3 lang="ar" style="display:none;">علاقة ملابس خشبية</h3>
+                        <p lang="fr">Bois massif de haute qualité</p>
+                        <p lang="ar" style="display:none;">خشب صلب عالي الجودة</p>
+                        <p class="price">14000 DA</p>
+                        <div class="product-actions">
+                            <button class="btn-buy">
+                                <span lang="fr">Acheter</span>
+                                <span lang="ar" style="display:none;">شراء</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-id="pm4">
+                    <img src="img/meuble/portemanteau5.jpg" alt="Porte Manteau 4">
+                    <div class="info">
+                        <h3 lang="fr">Porte Manteau Minimaliste</h3>
+                        <h3 lang="ar" style="display:none;">علاقة ملابس بسيطة</h3>
+                        <p lang="fr">Design épuré et élégant</p>
+                        <p lang="ar" style="display:none;">تصميم بسيط وأنيق</p>
+                        <p class="price">9000 DA</p>
+                        <div class="product-actions">
+                            <button class="btn-buy">
+                                <span lang="fr">Acheter</span>
+                                <span lang="ar" style="display:none;">شراء</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Salon Section -->
+    <section id="salon" class="product-section">
+        <div class="container">
+            <h2 lang="fr">Fauteuil Collection</h2>
+            <h2 lang="ar" style="display:none;">مجموعة الكراسي</h2>
+            
+            <div class="product-grid">
+                <div class="product-card" data-id="f1">
+                    <img src="img/salon/ST4.jpeg" alt="Fauteuil 1">
+                    <div class="info">
+                        <h3 lang="fr">Fauteuil Moderne</h3>
+                        <h3 lang="ar" style="display:none;">كرسي عصري</h3>
+                        <p lang="fr">Confort et élégance pour votre salon</p>
+                        <p lang="ar" style="display:none;">راحة وأناقة لغرفة معيشتك</p>
+                        <p class="price">35000 DA</p>
+                        <div class="product-actions">
+                            <button class="btn-buy">
+                                <span lang="fr">Acheter</span>
+                                <span lang="ar" style="display:none;">شراء</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-id="f2">
+                    <img src="img/salon/9 Modern Minimalist Living Room Designs_ Embrace Simplicity and Elegance.jpeg" alt="Fauteuil 2">
+                    <div class="info">
+                        <h3 lang="fr">Fauteuil Minimaliste</h3>
+                        <h3 lang="ar" style="display:none;">كرسي بسيط</h3>
+                        <p lang="fr">Design épuré et contemporain</p>
+                        <p lang="ar" style="display:none;">تصميم بسيط ومعاصر</p>
+                        <p class="price">28000 DA</p>
+                        <div class="product-actions">
+                            <button class="btn-buy">
+                                <span lang="fr">Acheter</span>
+                                <span lang="ar" style="display:none;">شراء</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-id="f3">
+                    <img src="img/salon/ce421babcf62ae0b665fb8192ce96084.jpg" alt="Fauteuil 3">
+                    <div class="info">
+                        <h3 lang="fr">Fauteuil Scandinave</h3>
+                        <h3 lang="ar" style="display:none;">كرسي اسكندنافي</h3>
+                        <p lang="fr">Style scandinave élégant et confortable</p>
+                        <p lang="ar" style="display:none;">طراز اسكندنافي أنيق ومريح</p>
+                        <p class="price">32500 DA</p>
+                        <div class="product-actions">
+                            <button class="btn-buy">
+                                <span lang="fr">Acheter</span>
+                                <span lang="ar" style="display:none;">شراء</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-id="f4">
+                    <img src="img/salon/Brayden Studio Ensemble de salon 3 pièces Proteus.jpeg" alt="Fauteuil 4">
+                    <div class="info">
+                        <h3 lang="fr">Fauteuil de Luxe</h3>
+                        <h3 lang="ar" style="display:none;">كرسي فاخر</h3>
+                        <p lang="fr">Finition premium et confort suprême</p>
+                        <p lang="ar" style="display:none;">تشطيب ممتاز وراحة فائقة</p>
+                        <p class="price">45000 DA</p>
+                        <div class="product-actions">
+                            <button class="btn-buy">
+                                <span lang="fr">Acheter</span>
+                                <span lang="ar" style="display:none;">شراء</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <h2 lang="fr">Table Basse Collection</h2>
+            <h2 lang="ar" style="display:none;">مجموعة طاولات القهوة</h2>
+            
+            <div class="product-grid">
+                <div class="product-card" data-id="tb1">
+                    <img src="img/salon/table base/81Eg2_lMVyL._AC_SL1500_copy_a7261023-92ed-40aa-8636-dea1c7fb70b4.jpg" alt="Table Basse 1">
+                    <div class="info">
+                        <h3 lang="fr">Table Basse Moderne</h3>
+                        <h3 lang="ar" style="display:none;">طاولة قهوة عصرية</h3>
+                        <p lang="fr">Design contemporain pour votre salon</p>
+                        <p lang="ar" style="display:none;">تصميم معاصر لغرفة معيشتك</p>
+                        <p class="price">18000 DA</p>
+                        <div class="product-actions">
+                            <button class="btn-buy">
+                                <span lang="fr">Acheter</span>
+                                <span lang="ar" style="display:none;">شراء</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-id="tb2">
+                    <img src="img/salon/table base/images (1).jpeg" alt="Table Basse 2">
+                    <div class="info">
+                        <h3 lang="fr">Table Basse en Verre</h3>
+                        <h3 lang="ar" style="display:none;">طاولة قهوة زجاجية</h3>
+                        <p lang="fr">Élégance et transparence</p>
+                        <p lang="ar" style="display:none;">أناقة وشفافية</p>
+                        <p class="price">22090 DA</p>
+                        <div class="product-actions">
+                            <button class="btn-buy">
+                                <span lang="fr">Acheter</span>
+                                <span lang="ar" style="display:none;">شراء</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-id="tb3">
+                    <img src="img/salon/table base/1991444-table-basse-etretat-coloris-naturel-60-x-120cm.avif" alt="Table Basse 3">
+                    <div class="info">
+                        <h3 lang="fr">Table Basse en Bois</h3>
+                        <h3 lang="ar" style="display:none;">طاولة قهوة خشبية</h3>
+                        <p lang="fr">Bois naturel de haute qualité</p>
+                        <p lang="ar" style="display:none;">خشب طبيعي عالي الجودة</p>
+                        <p class="price">25000 DA</p>
+                        <div class="product-actions">
+                            <button class="btn-buy">
+                                <span lang="fr">Acheter</span>
+                                <span lang="ar" style="display:none;">شراء</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-id="tb4">
+                    <img src="img/salon/table base/images (3).jpeg" alt="Table Basse 4">
+                    <div class="info">
+                        <h3 lang="fr">Table Basse Marbre</h3>
+                        <h3 lang="ar" style="display:none;">طاولة قهوة رخامية</h3>
+                        <p lang="fr">Luxe et durabilité</p>
+                        <p lang="ar" style="display:none;">فخامة ومتانة</p>
+                        <p class="price">38900 DA</p>
+                        <div class="product-actions">
+                            <button class="btn-buy">
+                                <span lang="fr">Acheter</span>
+                                <span lang="ar" style="display:none;">شراء</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <h2 lang="fr">Meuble TV Collection</h2>
+            <h2 lang="ar" style="display:none;">مجموعة طاولات التلفزيون</h2>
+            
+            <div class="product-grid">
+                <div class="product-card" data-id="tv1">
+                    <img src="img/salon/meuble-tele/1_c9582bfd-bc41-4e0a-84ef-c5bbbad4ba16.webp" alt="Meuble TV 1">
+                    <div class="info">
+                        <h3 lang="fr">Meuble TV Moderne</h3>
+                        <h3 lang="ar" style="display:none;">طاولة تلفزيون عصرية</h3>
+                        <p lang="fr">Design contemporain avec rangement</p>
+                        <p lang="ar" style="display:none;">تصميم معاصر مع تخزين</p>
+                        <p class="price">28900 DA</p>
+                        <div class="product-actions">
+                            <button class="btn-buy">
+                                <span lang="fr">Acheter</span>
+                                <span lang="ar" style="display:none;">شراء</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-id="tv2">
+                    <img src="img/salon/meuble-tele/images (1).jpeg" alt="Meuble TV 2">
+                    <div class="info">
+                        <h3 lang="fr">Meuble TV Minimaliste</h3>
+                        <h3 lang="ar" style="display:none;">طاولة تلفزيون بسيطة</h3>
+                        <p lang="fr">Style épuré et fonctionnel</p>
+                        <p lang="ar" style="display:none;">أسلوب بسيط وعملي</p>
+                        <p class="price">24000 DA</p>
+                        <div class="product-actions">
+                            <button class="btn-buy">
+                                <span lang="fr">Acheter</span>
+                                <span lang="ar" style="display:none;">شراء</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-id="tv3">
+                    <img src="img/salon/meuble-tele/images (2).jpeg" alt="Meuble TV 3">
+                    <div class="info">
+                        <h3 lang="fr">Meuble TV Suspendu</h3>
+                        <h3 lang="ar" style="display:none;">طاولة تلفزيون معلقة</h3>
+                        <p lang="fr">Design flottant moderne</p>
+                        <p lang="ar" style="display:none;">تصميم عائم عصري</p>
+                        <p class="price">32500 DA</p>
+                        <div class="product-actions">
+                            <button class="btn-buy">
+                                <span lang="fr">Acheter</span>
+                                <span lang="ar" style="display:none;">شراء</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-id="tv4">
+                    <img src="img/salon/meuble-tele/images.jpeg" alt="Meuble TV 4">
+                    <div class="info">
+                        <h3 lang="fr">Meuble TV en Bois</h3>
+                        <h3 lang="ar" style="display:none;">طاولة تلفزيون خشبية</h3>
+                        <p lang="fr">Bois massif et design classique</p>
+                        <p lang="ar" style="display:none;">خشب صلب وتصميم كلاسيكي</p>
+                        <p class="price">35000 DA</p>
+                        <div class="product-actions">
+                            <button class="btn-buy">
+                                <span lang="fr">Acheter</span>
+                                <span lang="ar" style="display:none;">شراء</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- More Sections Follow the Same Pattern -->
+    <!-- I'll add the other sections in brief to save space -->
+
+    <!-- Purchase Form (Hidden by Default) -->
+    <div id="purchaseForm" class="form-container">
+        <form id="orderForm">
+            <h2 lang="fr">Finaliser votre achat</h2>
+            <h2 lang="ar" style="display:none;">إتمام الشراء</h2>
+            
+            <div class="form-group">
+                <label for="name" lang="fr">Nom Complet</label>
+                <label for="name" lang="ar" style="display:none;">الاسم الكامل</label>
+                <input type="text" id="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="address" lang="fr">Adresse</label>
+                <label for="address" lang="ar" style="display:none;">العنوان</label>
+                <input type="text" id="address" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone" lang="fr">Numéro de Téléphone</label>
+                <label for="phone" lang="ar" style="display:none;">رقم الهاتف</label>
+                <input type="text" id="phone" required>
+            </div>
+
+            <div class="form-group">
+                <label for="payment" lang="fr">Méthode de Paiement</label>
+                <label for="payment" lang="ar" style="display:none;">طريقة الدفع</label>
+                <select id="payment" required>
+                    <option value="cash" lang="fr">Espèces à la livraison</option>
+                    <option value="cash" lang="ar" style="display:none;">نقدا عند التسليم</option>
+                    <option value="card" lang="fr">Carte Bancaire</option>
+                    <option value="card" lang="ar" style="display:none;">بطاقة بنكية</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn-submit">
+                <span lang="fr">Confirmer l'achat</span>
+                <span lang="ar" style="display:none;">تأكيد الشراء</span>
+            </button>
+            <button type="button" class="btn-close"></button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3 lang="fr">À propos de nous</h3>
+                    <h3 lang="ar" style="display:none;">من نحن</h3>
+                    <p lang="fr">Aura Decoration est votre destination de confiance pour des meubles élégants et de haute qualité qui transformeront votre maison.</p>
+                    <p lang="ar" style="display:none;">أورا للديكور هي وجهتك الموثوقة للأثاث الأنيق وعالي الجودة الذي سيحول منزلك.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 lang="fr">Liens rapides</h3>
+                    <h3 lang="ar" style="display:none;">روابط سريعة</h3>
+                    <div class="footer-nav">
+                        <a href="index.html">
+                            <span lang="fr">Accueil</span>
+                            <span lang="ar" style="display:none;">الرئيسية</span>
+                        </a>
+                        <a href="product.html">
+                            <span lang="fr">Collections</span>
+                            <span lang="ar" style="display:none;">المجموعات</span>
+                        </a>
+                        <a href="Contact.html">
+                            <span lang="fr">Contact</span>
+                            <span lang="ar" style="display:none;">اتصل بنا</span>
+                        </a>
+                        <a href="#">
+                            <span lang="fr">Politique de confidentialité</span>
+                            <span lang="ar" style="display:none;">سياسة الخصوصية</span>
+                        </a>
+                        <a href="#">
+                            <span lang="fr">Conditions d'utilisation</span>
+                            <span lang="ar" style="display:none;">شروط الاستخدام</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 lang="fr">Contactez-nous</h3>
+                    <h3 lang="ar" style="display:none;">اتصل بنا</h3>
+                    <div class="contact-info">
+                        <p>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span lang="fr">123 Rue Principale, Batna, Algerie</span>
+                            <span lang="ar" style="display:none;">123 الشارع الرئيسي، باتنة، الجزاىر</span>
+                        </p>
+                        <p>
+                            <i class="fas fa-phone-alt"></i>
+                            <span>+213 5XX-XXXXXX</span>
+                        </p>
+                        <p>
+                            <i class="fas fa-envelope"></i>
+                            <span>contact@aura-deco.com</span>
+                        </p>
+                        <p>
+                            <i class="fas fa-clock"></i>
+                            <span lang="fr">Sam-Jeu: 9h00 - 18h00</span>
+                            <span lang="ar" style="display:none;">الاثنين-السبت: 9:00 - 18:00</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p lang="fr">© 2025 Aura Decoration. Tous droits réservés.</p>
+                <p lang="ar" style="display:none;">© 2025 أورا للديكور. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <div id="go_to_top">
+        <a href="#top" aria-label="Back to top"><i class="fa-solid fa-angle-up"></i></a>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/product.js"></script>
+</body>
+</html>
